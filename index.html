@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AURA — Discover Beyond the Obvious</title>
+  <meta
+    name="description"
+    content="AURA is an interactive universe for discovering opportunities, people, ideas and experiences."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-glow"></div>
+
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+
+    <a href="#" class="logo">
+      AURA<span>✦</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#discover">Discover</a>
+      <a href="#universe">Universe</a>
+      <a href="#aura">Your Aura</a>
+    </nav>
+
+    <button class="nav-surprise" id="navSurprise">
+      Surprise me
+      <span>↗</span>
+    </button>
+
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="discover">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          AN OPPORTUNITY UNIVERSE
+        </div>
+
+        <h1>
+          Find what
+          <em>moves</em>
+          you.
+        </h1>
+
+        <p class="hero-description">
+          AURA turns opportunities into a living universe —
+          so the next thing you discover might be something
+          you never thought to search for.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#universe" class="button-primary">
+            Enter the universe
+            <span>↘</span>
+          </a>
+
+          <button class="button-text" id="heroSurprise">
+            <span>✦</span>
+            Surprise me
+          </button>
+
+        </div>
+
+        <div class="hero-meta">
+          <span>09 CATEGORIES</span>
+          <i></i>
+          <span>∞ POSSIBILITIES</span>
+        </div>
+
+      </div>
+
+
+      <!-- CONSTELLATION -->
+      <div class="constellation" id="constellation">
+
+        <div class="ambient-glow"></div>
+
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+
+        <div class="connection connection-one"></div>
+        <div class="connection connection-two"></div>
+        <div class="connection connection-three"></div>
+        <div class="connection connection-four"></div>
+
+        <div class="aura-core">
+          <div class="core-inner">
+            <span>AURA</span>
+            <small>EXPLORE</small>
+          </div>
+        </div>
+
+
+        <!-- NODES -->
+
+        <button
+          class="constellation-node node-1"
+          data-title="Global Youth Summit"
+          data-meta="Leadership · Istanbul"
+        >✦</button>
+
+        <button
+          class="constellation-node node-2"
+          data-title="AI Futures Lab"
+          data-meta="Technology · Lahore"
+        >✦</button>
+
+        <button
+          class="constellation-node node-3"
+          data-title="Young Voices MUN"
+          data-meta="MUN · Islamabad"
+        >✦</button>
+
+        <button
+          class="constellation-node node-4"
+          data-title="Creative Cities"
+          data-meta="Design · Online"
+        >✦</button>
+
+        <button
+          class="constellation-node node-5"
+          data-title="Future Founders"
+          data-meta="Entrepreneurship · Karachi"
+        >✦</button>
+
+        <button
+          class="constellation-node node-6"
+          data-title="Women in Tech"
+          data-meta="Technology · Online"
+        >✦</button>
+
+        <button
+          class="constellation-node node-7"
+          data-title="Youth Policy Fellowship"
+          data-meta="Policy · Islamabad"
+        >✦</button>
+
+        <button
+          class="constellation-node node-8"
+          data-title="Climate Challenge"
+          data-meta="Impact · Global"
+        >✦</button>
+
+
+        <!-- NODE TOOLTIP -->
+
+        <div class="node-tooltip" id="nodeTooltip">
+          <strong id="tooltipTitle">Opportunity</strong>
+          <span id="tooltipMeta">Explore</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- STATEMENT -->
+    <section class="statement-section">
+
+      <div class="eyebrow center">
+        WHY AURA EXISTS
+      </div>
+
+      <h2>
+        Because the best opportunity
+        <br />
+        <em>isn't always the one you searched for.</em>
+      </h2>
+
+      <div class="statement-line"></div>
+
+      <p>
+        Curiosity doesn't follow filters.
+        Sometimes you need a little randomness
+        to find something extraordinary.
+      </p>
+
+    </section>
+
+
+
+    <!-- UNIVERSE -->
+    <section class="universe-section" id="universe">
+
+      <div class="section-heading">
+
+        <div>
+
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            EXPLORE THE UNEXPECTED
+          </div>
+
+          <h2>
+            A world of
+            <em>possibilities.</em>
+          </h2>
+
+        </div>
+
+        <p>
+          Follow a curiosity.
+          Choose a direction.
+          Let AURA take you somewhere new.
+        </p>
+
+      </div>
+
+
+      <!-- FILTERS -->
+
+      <div class="filter-bar">
+
+        <button class="filter active" data-filter="all">
+          Everything
+        </button>
+
+        <button class="filter" data-filter="build">
+          Build something
+        </button>
+
+        <button class="filter" data-filter="people">
+          Meet people
+        </button>
+
+        <button class="filter" data-filter="learn">
+          Learn something
+        </button>
+
+        <button class="filter" data-filter="travel">
+          Travel somewhere
+        </button>
+
+        <button class="filter" data-filter="impact">
+          Change something
+        </button>
+
+      </div>
+
+
+      <!-- CARDS -->
+
+      <div class="opportunity-grid" id="opportunityGrid"></div>
+
+    </section>
+
+
+
+    <!-- SERENDIPITY -->
+    <section class="serendipity-section" id="surprise">
+
+      <div class="serendipity-copy">
+
+        <div class="eyebrow">
+          ✦ SERENDIPITY ENGINE
+        </div>
+
+        <h2>
+          You weren't
+          looking for
+          <em>this.</em>
+        </h2>
+
+        <p id="serendipityDescription">
+          And that's exactly why
+          you might need it.
+        </p>
+
+        <button class="button-primary" id="surpriseButton">
+          Reveal my unexpected one
+          <span>✦</span>
+        </button>
+
+      </div>
+
+
+      <div class="reveal-card" id="revealCard">
+
+        <div class="reveal-label">
+          AURA PICK
+        </div>
+
+        <div class="reveal-content">
+
+          <h3 id="revealTitle">
+            Waiting for a little curiosity...
+          </h3>
+
+          <p id="revealMeta">
+            Press the button and let chance choose.
+          </p>
+
+        </div>
+
+        <div class="reveal-divider"></div>
+
+        <p class="reveal-reason" id="revealReason">
+          Your next possibility
+          is closer than you think.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- YOUR AURA -->
+    <section class="aura-section" id="aura">
+
+      <div class="aura-copy">
+
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          YOUR AURA
+        </div>
+
+        <h2>
+          Your interests
+          tell a <em>story.</em>
+        </h2>
+
+        <p>
+          Save the things that spark something in you.
+          AURA turns those patterns into a visual identity —
+          not a score, but a direction.
+        </p>
+
+        <button class="outline-button" id="auraButton">
+          Reveal a sample aura
+          <span>↗</span>
+        </button>
+
+      </div>
+
+
+      <div class="aura-visual">
+
+        <div class="aura-orbit aura-orbit-1"></div>
+        <div class="aura-orbit aura-orbit-2"></div>
+        <div class="aura-orbit aura-orbit-3"></div>
+
+        <div class="aura-core">
+          <span id="auraTitle">
+            THE<br />
+            EXPLORER
+          </span>
+        </div>
+
+
+        <div class="aura-stat stat-one">
+          <strong>92</strong>
+          <span>Curiosity</span>
+        </div>
+
+        <div class="aura-stat stat-two">
+          <strong>84</strong>
+          <span>Global</span>
+        </div>
+
+        <div class="aura-stat stat-three">
+          <strong>78</strong>
+          <span>Leadership</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- FINAL CTA -->
+    <section class="final-section">
+
+      <div class="final-eyebrow">
+        THERE IS MORE OUT THERE
+      </div>
+
+      <h2>
+        Don't just find
+        <em>something.</em>
+      </h2>
+
+      <p>
+        Find something that changes
+        the direction you're going.
+      </p>
+
+      <a href="#discover" class="button-primary">
+        Start exploring
+        <span>↑</span>
+      </a>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <a href="#" class="logo">
+      AURA<span>✦</span>
+    </a>
+
+    <p>
+      Discover beyond the obvious.
+    </p>
+
+    <span>
+      PROJECT 07 · 2026
+    </span>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
